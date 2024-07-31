@@ -13,8 +13,9 @@ const Header = () => {
           .com
         </span>
       </div>
-
-      <Navigation />
+      <div className="max-md:hidden">
+        <Navigation />
+      </div>
     </div>
   );
 };

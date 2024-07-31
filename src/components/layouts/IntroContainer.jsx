@@ -1,6 +1,6 @@
 const IntroContainer = () => {
   return (
-    <div className="text-center">
+    <div className="text-center no-copy">
       <div className="text-5xl font-semibold mb-2">
         hey, <span className="text-text-orange">I'm Francis.</span>
       </div>

@@ -8,7 +8,6 @@ const Home = () => {
   return (
     <div className="w-screen h-screen relative">
       <Header />
-
       <div className="absolute left-8 top-1/2 -translate-y-1/2 flex flex-col gap-3">
         <SocialIcon icon={mdiGithub} toolTip="github" />
         <SocialIcon icon={mdiFacebook} toolTip="facebook" />
@@ -17,7 +16,7 @@ const Home = () => {
       <div className="absolute top-1/2 right-1/2 translate-x-1/2 -translate-y-1/2">
         {" "}
         <IntroContainer />
-        <div className="m-auto w-fit mt-4">
+        <div className="m-auto w-fit mt-4 ">
           <Button text="My Projects" />
         </div>
       </div>
