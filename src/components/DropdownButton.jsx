@@ -15,7 +15,7 @@ const DropdownButton = ({ text }) => {
         if (!trigger) {
           setVisible(false);
         }
-      }, 200);
+      }, 500);
       return () => clearTimeout(delay);
     }
   }, [trigger]);
@@ -23,7 +23,7 @@ const DropdownButton = ({ text }) => {
   return (
     <div
       className="flex items-center gap-2 group no-copy relative"
-      onMouseEnter={() => setTrigger(true)}
+      onMouseOver={() => setTrigger(true)}
       onMouseLeave={() => setTrigger(false)}
     >
       <button className="bg-primary text-secondary py-1 px-4 rounded-3xl cursor-pointer transition-all group-hover:bg-secondary group-hover:text-primary border-[4px] border-button-boundary-color ">

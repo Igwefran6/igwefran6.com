@@ -28,17 +28,6 @@ const DropdownDialog = () => {
         >
           <span className="hover:after:content-['↗'] transition-all">Blog</span>
         </Link>
-        <div className="mt-2 flex gap-2">
-          <a href="">
-            <SocialIcon icon={mdiGithub} toolTip="github" />
-          </a>
-          <a href="">
-            <SocialIcon icon={mdiFacebook} toolTip="facebook" />
-          </a>
-          <a href="">
-            <SocialIcon icon={mdiTwitter} toolTip="twitter" />
-          </a>
-        </div>
       </div>
     </>
   );

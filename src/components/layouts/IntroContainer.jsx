@@ -1,10 +1,17 @@
+import brush from "../../assets/vectors/brush.svg";
+
 const IntroContainer = () => {
   return (
-    <div className="text-center no-copy">
-      <div className="text-5xl font-semibold mb-2">
-        hey, <span className="text-text-orange">I'm Francis.</span>
+    <div className="text-center no-copy z-10">
+      <div className="max-sm:text-4xl lg:text-5xl font-semibold mb-2 relative">
+        hey, <span className="text-text-orange z-50">I'm Francis.</span>
+        <img
+          src={brush}
+          alt=""
+          className="absolute w-[300px] right-8 -top-16 -z-10 opacity-40 max-lg:hidden"
+        ></img>
       </div>
-      <div className="text-2xl md:max-w-[480px] m-auto">
+      <div className=" lg:text-2xl max-w-[480px] m-auto">
         I create interactive websites that engage users and enhance their online
         experience.
       </div>

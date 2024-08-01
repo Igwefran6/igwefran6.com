@@ -14,5 +14,6 @@
   html {
     font-family: "KoHo", Arial, Helvetica, sans-serif; /* Adding a fallback font */
     color: #475569;
+    --cursor-color: #333;
   }
 }

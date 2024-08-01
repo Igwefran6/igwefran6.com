@@ -1,9 +1,10 @@
 import { Link } from "react-router-dom";
 import Navigation from "../layouts/Navigation";
+import MenuHamburgar from "../MenuHamburgar";
 
 const Header = () => {
   return (
-    <div className="h-[75px] font-semibold text-[18px] flex items-center justify-between px-7 cursor-pointer no-copy">
+    <div className="h-[75px] font-semibold text-[18px] flex items-center justify-between max-sm:px-8 lg:px-20 max-sm:py-7 py-14 cursor-pointer no-copy">
       {/* logo here */}
       <div className="hover:scale-105 transition-all group">
         <Link to="/" className="group-hover:opacity-75">
@@ -15,6 +16,9 @@ const Header = () => {
       </div>
       <div className="max-md:hidden">
         <Navigation />
+      </div>
+      <div className="lg:hidden">
+        <MenuHamburgar />
       </div>
     </div>
   );

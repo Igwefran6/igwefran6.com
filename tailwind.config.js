@@ -4,12 +4,12 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: "#D9D9D9",
-        "primary-transparent": "#D9D9D9DD",
+        primary: "#CBD5E1",
+        "primary-transparent": "#CBD5E1DD",
         secondary: "#334155",
-        background: "#FFFFFF",
+        background: "#EEEEEE",
         "text-orange": "#F87537",
-        "button-boundary-color": "#94a3b8",
+        "button-boundary-color": "#94A3B8",
       },
     },
   },
