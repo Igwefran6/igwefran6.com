@@ -10,6 +10,7 @@ export default {
         background: "#EEEEEE",
         "text-orange": "#F87537",
         "button-boundary-color": "#94A3B8",
+        "card-bg": "#1B1B1B",
       },
     },
   },
