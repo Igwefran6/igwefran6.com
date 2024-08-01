@@ -44,7 +44,7 @@ const About = () => {
           <span className="font-semibold text-6xl">&lt;/&gt;</span>
         </div>
         <div className="lg:w-1/2 h-screen bg-secondary p-8 grid place-items-center">
-          <div className="w-[300px] h-[300px] bg-primary rounded-full overflow-hidden border-8 border-primary">
+          <div className="w-[300px] h-[300px] bg-primary rounded-full overflow-hidden border-8 border-primary grayscale">
             <img src={myImage} alt="" srcSet="" />
           </div>
         </div>

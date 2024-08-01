@@ -8,7 +8,11 @@ import {
   mdiTailwind,
 } from "@mdi/js";
 
+import { useState } from "react";
+
 const Skills = () => {
+  const [skill, setSkill] = useState("");
+  const [visible, setVisible] = useState(false);
   return (
     <div className="h-screen w-screen flex">
       <div className="lg:w-2/3 h-screen bg-secondary p-20 ">
@@ -21,48 +25,108 @@ const Skills = () => {
           <div className=" bg-card-bg rounded-lg"></div>
         </div>
       </div>
-      <div className="lg:w-1/2 h-screen bg-primary p-20">
+      <div className="lg:w-1/2 h-screen bg-primary p-20 relative">
         <h1 className="text-4xl mb-1">Skills</h1>
         <hr className="w-24 border-t-4 my-2 border-text-orange"></hr>
         <div className="pl-4 mb-2">
           <h2 className="text-2xl mb-1">Development</h2>
           <div className="grid lg:grid-cols-4 gap-2 my-2 w-fit pl-4">
-            <span className="w-20 h-20 bg-primary rounded-full grid place-items-center border-2 border-secondary hover:bg-secondary hover:text-primary">
+            <span
+              className="w-20 h-20 bg-primary rounded-full grid place-items-center border-2 border-secondary hover:bg-secondary hover:text-primary"
+              onMouseOver={() => {
+                setSkill("HTML5");
+                setVisible(true);
+              }}
+              onMouseLeave={() => {
+                setSkill("");
+                setVisible(false);
+              }}
+            >
               <Icon
                 path={mdiLanguageHtml5}
                 size="48px"
                 className="group-hover:text-primary transition-all"
               />
             </span>
-            <span className="w-20 h-20 bg-primary rounded-full grid place-items-center border-2 border-secondary hover:bg-secondary hover:text-primary">
+            <span
+              className="w-20 h-20 bg-primary rounded-full grid place-items-center border-2 border-secondary hover:bg-secondary hover:text-primary"
+              onMouseOver={() => {
+                setSkill("CSS3");
+                setVisible(true);
+              }}
+              onMouseLeave={() => {
+                setSkill("");
+                setVisible(false);
+              }}
+            >
               <Icon
                 path={mdiLanguageCss3}
                 size="48px"
                 className="group-hover:text-primary transition-all"
               />
             </span>
-            <span className="w-20 h-20 bg-primary rounded-full grid place-items-center border-2 border-secondary hover:bg-secondary hover:text-primary">
+            <span
+              className="w-20 h-20 bg-primary rounded-full grid place-items-center border-2 border-secondary hover:bg-secondary hover:text-primary"
+              onMouseOver={() => {
+                setSkill("Javascript");
+                setVisible(true);
+              }}
+              onMouseLeave={() => {
+                setSkill("");
+                setVisible(false);
+              }}
+            >
               <Icon
                 path={mdiLanguageJavascript}
                 size="48px"
                 className="group-hover:text-primary transition-all"
               />
             </span>
-            <span className="w-20 h-20 bg-primary rounded-full grid place-items-center border-2 border-secondary hover:bg-secondary hover:text-primary">
+            <span
+              className="w-20 h-20 bg-primary rounded-full grid place-items-center border-2 border-secondary hover:bg-secondary hover:text-primary"
+              onMouseOver={() => {
+                setSkill("ReactJS");
+                setVisible(true);
+              }}
+              onMouseLeave={() => {
+                setSkill("");
+                setVisible(false);
+              }}
+            >
               <Icon
                 path={mdiReact}
                 size="48px"
                 className="group-hover:text-primary transition-all"
               />
             </span>
-            <span className="w-20 h-20 bg-primary rounded-full grid place-items-center border-2 border-secondary hover:bg-secondary hover:text-primary">
+            <span
+              className="w-20 h-20 bg-primary rounded-full grid place-items-center border-2 border-secondary hover:bg-secondary hover:text-primary"
+              onMouseOver={() => {
+                setSkill("NodeJS");
+                setVisible(true);
+              }}
+              onMouseLeave={() => {
+                setSkill("");
+                setVisible(false);
+              }}
+            >
               <Icon
                 path={mdiNodejs}
                 size="48px"
                 className="group-hover:text-primary transition-all"
               />
             </span>
-            <span className="w-20 h-20 bg-primary rounded-full grid place-items-center border-2 border-secondary hover:bg-secondary hover:text-primary text-[38px]">
+            <span
+              className="w-20 h-20 bg-primary rounded-full grid place-items-center border-2 border-secondary hover:bg-secondary hover:text-primary"
+              onMouseOver={() => {
+                setSkill("ExpressJS");
+                setVisible(true);
+              }}
+              onMouseLeave={() => {
+                setSkill("");
+                setVisible(false);
+              }}
+            >
               <svg
                 fill="currentColor"
                 width="52px"
@@ -74,7 +138,17 @@ const Skills = () => {
                 <path d="M24 18.588a1.529 1.529 0 0 1-1.895-.72l-3.45-4.771-.5-.667-4.003 5.444a1.466 1.466 0 0 1-1.802.708l5.158-6.92-4.798-6.251a1.595 1.595 0 0 1 1.9.666l3.576 4.83 3.596-4.81a1.435 1.435 0 0 1 1.788-.668L21.708 7.9l-2.522 3.283a.666.666 0 0 0 0 .994l4.804 6.412zM.002 11.576l.42-2.075c1.154-4.103 5.858-5.81 9.094-3.27 1.895 1.489 2.368 3.597 2.275 5.973H1.116C.943 16.447 4.005 19.009 7.92 17.7a4.078 4.078 0 0 0 2.582-2.876c.207-.666.548-.78 1.174-.588a5.417 5.417 0 0 1-2.589 3.957 6.272 6.272 0 0 1-7.306-.933 6.575 6.575 0 0 1-1.64-3.858c0-.235-.08-.455-.134-.666A88.33 88.33 0 0 1 0 11.577zm1.127-.286h9.654c-.06-3.076-2.001-5.258-4.59-5.278-2.882-.04-4.944 2.094-5.071 5.264z" />
               </svg>
             </span>
-            <span className="w-20 h-20 bg-primary rounded-full grid place-items-center border-2 border-secondary hover:bg-secondary hover:text-primary text-[32px]">
+            <span
+              className="w-20 h-20 bg-primary rounded-full grid place-items-center border-2 border-secondary hover:bg-secondary hover:text-primary"
+              onMouseOver={() => {
+                setSkill("MongoDB");
+                setVisible(true);
+              }}
+              onMouseLeave={() => {
+                setSkill("");
+                setVisible(false);
+              }}
+            >
               <svg
                 fill="currentColor"
                 width="78px"
@@ -101,7 +175,17 @@ const Skills = () => {
                 </g>
               </svg>
             </span>
-            <span className="w-20 h-20 bg-primary rounded-full grid place-items-center border-2 border-secondary hover:bg-secondary hover:text-primary">
+            <span
+              className="w-20 h-20 bg-primary rounded-full grid place-items-center border-2 border-secondary hover:bg-secondary hover:text-primary"
+              onMouseOver={() => {
+                setSkill("TailwindCSS");
+                setVisible(true);
+              }}
+              onMouseLeave={() => {
+                setSkill("");
+                setVisible(false);
+              }}
+            >
               <Icon
                 path={mdiTailwind}
                 size="48px"
@@ -113,7 +197,7 @@ const Skills = () => {
         <div className="pl-4 mb-2">
           <h2 className="text-2xl mb-1">Tools</h2>
           <div className="pl-4 flex flex-wrap gap-1">
-            <span className="bg-secondary text-primary py-2 px-3 rounded-lg ">
+            <span className="bg-secondary text-primary py-2 px-3 rounded-lg">
               ✔ Git + Github
             </span>
             <span className="bg-secondary text-primary py-2 px-3 rounded-lg ">
@@ -139,6 +223,11 @@ const Skills = () => {
             </span>
           </div>
         </div>
+        {visible && (
+          <span className="absolute top-8 right-8 py-2 px-4 border border-secondary hidden lg:block">
+            {skill}
+          </span>
+        )}
       </div>
     </div>
   );
