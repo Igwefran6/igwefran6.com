@@ -3,18 +3,12 @@
 @tailwind utilities;
 
 @layer base {
-  @font-face {
-    font-family: "KoHo";
-    font-style: normal;
-    font-weight: 400;
-    font-display: swap;
-    src: url(assets\fonts\KoHo\KoHo-Regular.ttf) format("truetype");
-  }
-
-  html {
+  body {
     font-family: "KoHo", Arial, Helvetica, sans-serif; /* Adding a fallback font */
+    font-weight: 400;
+    font-style: normal;
     color: #475569;
-    --cursor-color: #333;
     background: #fafafa;
+    --cursor-color: #333;
   }
 }
