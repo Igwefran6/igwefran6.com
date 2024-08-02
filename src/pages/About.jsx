@@ -5,9 +5,8 @@ const About = () => {
   return (
     <>
       <AnimatedCursorSetup />
-
       <div className="h-screen w-screen overflow-x-hidden flex max-lg:block">
-        <div className="lg:w-2/3  lg:h-screen bg-primary p-20 relative">
+        <div className="lg:w-[60%]  lg:h-screen bg-primary p-20 relative">
           <h1 className="text-5xl font-semibold">Hello,</h1>
           <p className="mt-4 text-[18px] font-semibold">
             I'm Igwe Chimezie Francis, or just Francis. I focus on creating
@@ -43,7 +42,7 @@ const About = () => {
           </p>
           <span className="font-semibold text-6xl">&lt;/&gt;</span>
         </div>
-        <div className="lg:w-1/2 h-screen bg-secondary p-8 grid place-items-center">
+        <div className="lg:w-[40%] h-screen bg-secondary p-8 grid place-items-center">
           <div className="w-[300px] h-[300px] bg-primary rounded-full overflow-hidden border-8 border-primary grayscale">
             <img src={myImage} alt="" srcSet="" />
           </div>

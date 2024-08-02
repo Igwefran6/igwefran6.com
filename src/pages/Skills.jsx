@@ -15,17 +15,55 @@ const Skills = () => {
   const [visible, setVisible] = useState(false);
   return (
     <div className="h-screen w-screen flex">
-      <div className="lg:w-2/3 h-screen bg-secondary p-20 ">
-        <h1 className="text-4xl mb-1">What I Do...</h1>
+      <div
+        className="lg:w-[60%] bg-secondary p-20 bg-[url('../../src/assets/images/web-dev-simple.jpg')] bg-fixed bg-center bg-no-repeat bg-cover
+ w-full h-full"
+      >
+        <h1 className="text-4xl mb-1 text-primary">What I Do...</h1>
         <hr className="w-24 border-t-4 my-2 border-text-orange"></hr>
         <div className="grid grid-cols-2 grid-rows-2 gap-8 h-full">
-          <div className=" bg-card-bg rounded-lg"></div>
-          <div className=" bg-card-bg rounded-lg"></div>
-          <div className=" bg-card-bg rounded-lg"></div>
-          <div className=" bg-card-bg rounded-lg"></div>
+          <div className=" bg-secondary hover:bg-card-bg hover:scale-105 transition-all rounded-lg p-4">
+            <h2 className="text-[18px] font-bold text-primary mb-4">
+              WEB DEVELOPMENT
+            </h2>
+            <p className="text-primary opacity-75">
+              Using ReactJS, ExpressJS, NodeJS and MongoDB I have a passion for
+              developing pixel-perfect websites and apps while maintaining a
+              semantic, modular, and DRY code base.
+            </p>
+          </div>
+          <div className=" bg-secondary hover:bg-card-bg hover:scale-105 transition-all rounded-lg p-4">
+            <h2 className="text-[18px] font-bold text-primary mb-4">
+              RESPONSIVE UI DESIGN
+            </h2>
+            <p className="text-primary opacity-75">
+              A user interface should be intuitive — if you need to explain it,
+              it's not quite right. I focus on creating responsive and visually
+              appealing interfaces for websites and apps.
+            </p>
+          </div>
+          <div className=" bg-secondary hover:bg-card-bg hover:scale-105 transition-all rounded-lg p-4">
+            <h2 className="text-[18px] font-bold text-primary mb-4">
+              CROSS-BROWSER COMPARTIBILTY
+            </h2>
+            <p className="text-primary opacity-75">
+              Testing and adjusting websites to ensure they function correctly
+              across different web browsers, maintaining a consistent user
+              experience.
+            </p>
+          </div>
+          <div className=" bg-secondary hover:bg-card-bg hover:scale-105 transition-all rounded-lg p-4">
+            <h2 className="text-[18px] font-bold text-primary mb-4">
+              DEBUG AND TROBLESHOOT ISSUES
+            </h2>
+            <p className="text-primary opacity-75">
+              Identifying and fixing bugs or issues that arise on the website,
+              ensuring that all features and functionalities work as intended.
+            </p>
+          </div>
         </div>
       </div>
-      <div className="lg:w-1/2 h-screen bg-primary p-20 relative">
+      <div className="lg:w-[40%] h-screen bg-primary p-20 relative">
         <h1 className="text-4xl mb-1">Skills</h1>
         <hr className="w-24 border-t-4 my-2 border-text-orange"></hr>
         <div className="pl-4 mb-2">
