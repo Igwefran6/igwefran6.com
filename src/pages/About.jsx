@@ -1,10 +1,7 @@
 import myImage from "../assets/images/my-image.jpg";
-import AnimatedCursorSetup from "../components/layouts/AnimatedCursorSetup";
-
 const About = () => {
   return (
     <>
-      <AnimatedCursorSetup />
       <div className="h-screen w-screen overflow-x-hidden flex max-lg:block">
         <div className="lg:w-[60%]  lg:h-screen bg-primary p-20 relative">
           <h1 className="text-5xl font-semibold">Hello,</h1>

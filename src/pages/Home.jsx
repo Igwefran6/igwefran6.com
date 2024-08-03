@@ -4,7 +4,6 @@ import Button from "../components/Button";
 import SocialIcon from "../components/SocialIcon";
 import ScrolldownMssg from "../components/ScrolldownMssg";
 import { mdiGithub, mdiFacebook, mdiTwitter } from "@mdi/js";
-import AnimatedCursorSetup from "../components/layouts/AnimatedCursorSetup";
 import Bubble from "../components/layouts/Bubbles";
 
 const Home = () => {
@@ -27,7 +26,6 @@ const Home = () => {
         <div className="absolute right-8 bottom-[120px] translate-x-1/2 max-lg:hidden">
           <ScrolldownMssg />
         </div>
-        <AnimatedCursorSetup />
       </div>
       <Bubble />
     </>

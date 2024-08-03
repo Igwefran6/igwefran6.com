@@ -20,9 +20,9 @@ const Skills = () => {
  w-full h-full"
       >
         <h1 className="text-4xl mb-1 text-primary">What I Do...</h1>
-        <hr className="w-24 border-t-4 my-2 border-text-orange"></hr>
-        <div className="grid grid-cols-2 grid-rows-2 gap-8 h-full">
-          <div className=" bg-secondary hover:bg-card-bg hover:scale-105 transition-all rounded-lg p-4">
+        <hr className="w-24 border-t-4 my-4 border-text-orange"></hr>
+        <div className="grid grid-cols-2 grid-rows-2 gap-8 h-fit">
+          <div className=" bg-secondary hover:bg-card-bg hover:scale-105 transition-all rounded-lg p-4 h-[220px] pb-6">
             <h2 className="text-[18px] font-bold text-primary mb-4">
               WEB DEVELOPMENT
             </h2>
@@ -32,7 +32,7 @@ const Skills = () => {
               semantic, modular, and DRY code base.
             </p>
           </div>
-          <div className=" bg-secondary hover:bg-card-bg hover:scale-105 transition-all rounded-lg p-4">
+          <div className=" bg-secondary hover:bg-card-bg hover:scale-105 transition-all rounded-lg p-4 h-[220px] pb-6">
             <h2 className="text-[18px] font-bold text-primary mb-4">
               RESPONSIVE UI DESIGN
             </h2>
@@ -42,7 +42,7 @@ const Skills = () => {
               appealing interfaces for websites and apps.
             </p>
           </div>
-          <div className=" bg-secondary hover:bg-card-bg hover:scale-105 transition-all rounded-lg p-4">
+          <div className=" bg-secondary hover:bg-card-bg hover:scale-105 transition-all rounded-lg p-4 h-[220px] pb-6">
             <h2 className="text-[18px] font-bold text-primary mb-4">
               CROSS-BROWSER COMPARTIBILTY
             </h2>
@@ -52,7 +52,7 @@ const Skills = () => {
               experience.
             </p>
           </div>
-          <div className=" bg-secondary hover:bg-card-bg hover:scale-105 transition-all rounded-lg p-4">
+          <div className=" bg-secondary hover:bg-card-bg hover:scale-105 transition-all rounded-lg p-4 h-[220px] pb-6">
             <h2 className="text-[18px] font-bold text-primary mb-4">
               DEBUG AND TROBLESHOOT ISSUES
             </h2>
@@ -65,7 +65,7 @@ const Skills = () => {
       </div>
       <div className="lg:w-[40%] h-screen bg-primary p-20 relative">
         <h1 className="text-4xl mb-1">Skills</h1>
-        <hr className="w-24 border-t-4 my-2 border-text-orange"></hr>
+        <hr className="w-24 border-t-4 my-4 border-text-orange"></hr>
         <div className="pl-4 mb-2">
           <h2 className="text-2xl mb-1">Development</h2>
           <div className="grid lg:grid-cols-4 gap-2 my-2 w-fit pl-4">
@@ -168,7 +168,7 @@ const Skills = () => {
               <svg
                 fill="currentColor"
                 width="52px"
-                height="52x"
+                height="52px"
                 viewBox="0 0 24 24"
                 role="img"
                 xmlns="http://www.w3.org/2000/svg"
@@ -190,21 +190,21 @@ const Skills = () => {
               <svg
                 fill="currentColor"
                 width="78px"
-                height="78pxpx"
+                height="78px"
                 viewBox="-6.4 -6.4 44.80 44.80"
                 version="1.1"
                 xmlns="http://www.w3.org/2000/svg"
                 transform="matrix(1, 0, 0, 1, 0, 0)"
                 stroke="#000000"
-                stroke-width="0.00032"
+                strokeWidth="0.00032"
               >
-                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
                 <g
                   id="SVGRepo_tracerCarrier"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                   stroke="#CCCCCC"
-                  stroke-width="0.064"
+                  strokeWidth="0.064"
                 ></g>
                 <g id="SVGRepo_iconCarrier">
                   {" "}
