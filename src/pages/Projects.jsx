@@ -2,7 +2,7 @@ import ProjectCard from "../components/layouts/ProjectCard";
 const Project = () => {
   return (
     <div className="min-h-screen w-screen bg-secondary px-20 pt-12">
-      <h1 className="text-4xl text-primary ">Projects</h1>
+      <h1 className="text-4xl text-primary ">Some of My Work</h1>
       <hr className="w-24 border-t-4 my-4 border-text-orange"></hr>
       <div className="">
         <ProjectCard
@@ -14,8 +14,30 @@ const Project = () => {
           mind, making it an ideal tool for students, writers, and anyone
           looking to expand their vocabulary."
           technologies={["ReactJs", "Tailwind", "Vercel"]}
-          demoURL="#"
-          websiteURL="#"
+          repoURL="https://github.com/Igwefran6/dictle"
+          websiteURL="https://dictle.vercel.app"
+        />
+        <ProjectCard
+          title="Colormath"
+          imgURL="../../src/assets/images/Colormath-img.png"
+          text="Test your math skills and color recognition in this 
+          exciting game! In ColorMath, you'll be presented with a series
+           of math problems and colorful options to choose from. 
+           Simply select the correct answer that matches the math problem, 
+           and get ready to advance to the next level! But be careful."
+          technologies={["ReactJs", "Tailwind", "Vercel"]}
+          repoURL="https://github.com/Igwefran6/colormath"
+          websiteURL="https://colormath.vercel.app"
+        />
+        <ProjectCard
+          title="24Eatups"
+          imgURL="../../src/assets/images/24Eatups-img.png"
+          text="Welcome to 24Eatups one of my first websites! Created using HTML, CSS, 
+          and JavaScript. The website sleek, modern website offers a 
+          full menu. It's Hosted on GitHub Pages."
+          technologies={["HTML5", "CSS3", "SASS", "Webpack", "Github-pages"]}
+          repoURL="https://github.com/Igwefran6/Restaurant-"
+          websiteURL="https://igwefran6.github.io/Restaurant-/"
         />
       </div>
     </div>

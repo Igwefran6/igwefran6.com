@@ -4,7 +4,7 @@ const ProjectCard = ({
   imgURL,
   text,
   technologies,
-  demoURL,
+  repoURL,
   websiteURL,
 }) => {
   const gotoURL = (url) => {
@@ -15,7 +15,7 @@ const ProjectCard = ({
       <div className="w-[35%] bg-slate-800 p-8 text-primary">
         <h2 className="text-2xl mb-4">{title}</h2>
         <p className="pr-4">{text}</p>
-        <div className="flex gap-2 flex-wrap">
+        <div className="flex gap-2 flex-wrap py-2">
           {technologies &&
             technologies.map((t) => {
               return (
@@ -27,10 +27,10 @@ const ProjectCard = ({
         </div>
         <div className=" flex gap-2 flex-wrap">
           <button
-            onClick={() => gotoURL(demoURL)}
+            onClick={() => gotoURL(repoURL)}
             className="p-2 py-1 my-2 border border-primary inline-block w-[45%] hover:bg-primary hover:text-secondary active:scale-105 font-semibold"
           >
-            Demo
+            Repo
           </button>
           <button
             onClick={() => gotoURL(websiteURL)}
