@@ -232,9 +232,9 @@ const Skills = () => {
             </span>
           </div>
         </div>
-        <div className="mb-2">
+        <div className="lg:pl-4 mb-2">
           <h2 className="text-2xl mb-1">Tools</h2>
-          <div className="lg:pl-4 flex flex-wrap gap-1">
+          <div className=" flex flex-wrap gap-1">
             <span className="bg-secondary text-primary py-2 px-3 rounded-lg">
               ✔ Git + Github
             </span>

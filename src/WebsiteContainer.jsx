@@ -9,12 +9,24 @@ Footer;
 const WebContainer = () => {
   return (
     <div className="overflow-x-hidden">
-      <Home />
-      <About />
-      <Skills />
-      <Project />
-      <Contact />
-      <Footer />
+      <div className="">
+        <Home />
+      </div>
+      <div className="">
+        <About />
+      </div>
+      <div className="">
+        <Skills />
+      </div>
+      <div className="">
+        <Project />
+      </div>
+      <div className="">
+        <Contact />
+      </div>
+      <div className="">
+        <Footer />
+      </div>
     </div>
   );
 };
