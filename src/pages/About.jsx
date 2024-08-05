@@ -1,4 +1,5 @@
-import myImage from "/images/my-image.jpg";
+import myImage from "/images/myImage.webp";
+import PlaceholderImage from "/images/myImage-sm.webp";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const About = () => {
@@ -44,6 +45,7 @@ const About = () => {
           <div className="w-[300px] h-full max-h-[600px] bg-primary rounded-full overflow-hidden border-8 border-primary grayscale flex items-center justify-center">
             <LazyLoadImage
               src={myImage}
+              PlaceholderSrc={PlaceholderImage}
               alt="My Image"
               className="w-full h-full object-cover"
             />

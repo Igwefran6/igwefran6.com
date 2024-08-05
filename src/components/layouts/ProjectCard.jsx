@@ -1,7 +1,10 @@
 import { useEffect } from "react";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 const ProjectCard = ({
   title,
   imgURL,
+  placeholderImage,
+  alt,
   text,
   technologies,
   repoURL,
@@ -13,7 +16,12 @@ const ProjectCard = ({
   return (
     <div className="flex-row h-auto pb-4 opacity-85 hover:opacity-90">
       <div className="flex items-center ">
-        <img src={imgURL} alt="Project" className="w-full h-auto" />
+        <LazyLoadImage
+          src={imgURL}
+          PlaceholderSrc={placeholderImage}
+          alt={alt}
+          className="w-full h-auto"
+        />
       </div>
       <div className=" bg-slate-800 p-8 text-primary">
         <h2 className="text-2xl mb-4">{title}</h2>
