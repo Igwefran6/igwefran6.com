@@ -7,7 +7,7 @@ const Project = () => {
       <div>
         <ProjectCard
           title="Dictle"
-          imgURL="../../src/assets/images/Dictle-img.png"
+          imgURL="/images/Dictle-img.png"
           text="Dictle is a dictionary app designed to provide users with quick and
           easy access to definitions, synonyms, antonyms, and example sentences
           for any word. The app is designed with simplicity and efficiency in
@@ -19,7 +19,7 @@ const Project = () => {
         />
         <ProjectCard
           title="Colormath"
-          imgURL="../../src/assets/images/Colormath-img.png"
+          imgURL="/images/Colormath-img.png"
           text="Test your math skills and color recognition in this 
           exciting game! In ColorMath, you'll be presented with a series
            of math problems and colorful options to choose from. 
@@ -31,7 +31,7 @@ const Project = () => {
         />
         <ProjectCard
           title="24Eatups"
-          imgURL="../../src/assets/images/24Eatups-img.png"
+          imgURL="/images/24Eatups-img.png"
           text="Welcome to 24Eatups one of my first websites! Created using HTML, CSS, 
           and JavaScript. The website sleek, modern website offers a 
           full menu. It's Hosted on GitHub Pages."

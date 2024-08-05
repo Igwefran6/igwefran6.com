@@ -62,7 +62,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="relative w-screen bg-[url('../../src/assets/images/Get-in-touch.jpg')] bg-fixed bg-center bg-no-repeat bg-cover p-20 ">
+    <div className="relative w-screen bg-[url('/images/Get-in-touch.jpg')] bg-fixed bg-center bg-no-repeat bg-cover p-20 ">
       <div className="absolute inset-0 bg-black bg-opacity-50"></div>
       <div className="relative z-10 max-w-md w-full bg-transparent shadow-lg rounded-lg">
         <h2 className="text-4xl mb-6 text-primary">Get In Touch</h2>

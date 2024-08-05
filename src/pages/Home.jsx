@@ -12,9 +12,21 @@ const Home = () => {
       <div className="w-screen h-screen overflow-x-hidden relative bg-transparent">
         <Header />
         <div className="absolute left-20 top-1/2 -translate-y-1/2 flex flex-col gap-3 max-lg:hidden">
-          <SocialIcon icon={mdiGithub} toolTip="github" />
-          <SocialIcon icon={mdiFacebook} toolTip="facebook" />
-          <SocialIcon icon={mdiTwitter} toolTip="twitter" />
+          <SocialIcon
+            icon={mdiGithub}
+            toolTip="github"
+            url="https://github.com/igwefran6"
+          />
+          <SocialIcon
+            icon={mdiFacebook}
+            toolTip="facebook"
+            url="https://web.facebook.com/profile.php?id=61552677885908&sk=about"
+          />
+          <SocialIcon
+            icon={mdiTwitter}
+            toolTip="twitter"
+            url="https://x.com/igwefran6"
+          />
         </div>
         <div className="absolute top-1/2 right-1/2 translate-x-1/2 -translate-y-1/2">
           {" "}

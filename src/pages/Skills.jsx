@@ -16,7 +16,7 @@ const Skills = () => {
   return (
     <div className=" w-screen lg:flex">
       <div
-        className="lg:w-[60%] bg-secondary p-20 bg-[url('../../src/assets/images/web-dev-simple.jpg')] bg-fixed bg-center bg-no-repeat bg-cover
+        className="lg:w-[60%] bg-secondary p-20 bg-[url('/images/web-dev-simple.jpg')] bg-fixed bg-center bg-no-repeat bg-cover
  w-full h-full"
       >
         <h1 className="text-4xl mb-1 text-primary">What I Do...</h1>

@@ -1,7 +1,7 @@
 import Icon from "@mdi/react";
 import { useState } from "react";
 
-const SocialIcon = ({ icon, toolTip }) => {
+const SocialIcon = ({ icon, toolTip, url }) => {
   const [visible, setVisible] = useState(false);
   const makeVisible = (event) => {
     setVisible(true);
@@ -19,11 +19,13 @@ const SocialIcon = ({ icon, toolTip }) => {
         onMouseLeave={makeInvisible}
       >
         <span className="w-10 h-10 bg-primary group-hover:bg-secondary rounded-full grid place-items-center transition-all">
-          <Icon
-            path={icon}
-            size="28px"
-            className="group-hover:text-primary transition-all"
-          />
+          <a href={url} target="_blank" className="">
+            <Icon
+              path={icon}
+              size="28px"
+              className="group-hover:text-primary transition-all"
+            />
+          </a>
         </span>
       </div>
       {visible && (
