@@ -20,9 +20,12 @@ const ProjectCard = ({
         <p className="pr-4">{text}</p>
         <div className="flex gap-2 flex-wrap py-2">
           {technologies &&
-            technologies.map((t) => {
+            technologies.map((t, i) => {
               return (
-                <span className="p-2 py-1 my-2 border border-primary inline-block">
+                <span
+                  key={i}
+                  className="p-2 py-1 my-2 border border-primary inline-block"
+                >
                   {t}
                 </span>
               );

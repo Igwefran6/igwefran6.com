@@ -1,4 +1,5 @@
 import myImage from "/images/my-image.jpg";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const About = () => {
   return (
@@ -41,9 +42,9 @@ const About = () => {
         </div>
         <div className="lg:w-[40%] bg-secondary max-lg:bg-primary  p-8 grid place-items-center">
           <div className="w-[300px] h-full max-h-[600px] bg-primary rounded-full overflow-hidden border-8 border-primary grayscale flex items-center justify-center">
-            <img
+            <LazyLoadImage
               src={myImage}
-              alt="Profile"
+              alt="My Image"
               className="w-full h-full object-cover"
             />
           </div>
