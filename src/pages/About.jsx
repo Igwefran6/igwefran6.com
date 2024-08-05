@@ -1,9 +1,10 @@
 import myImage from "../assets/images/my-image.jpg";
+
 const About = () => {
   return (
     <>
-      <div className="h-screen w-screen overflow-x-hidden flex max-lg:block">
-        <div className="lg:w-[60%]  lg:h-screen bg-primary p-20 relative">
+      <div className="w-screen overflow-hidden flex max-lg:block">
+        <div className="lg:w-[60%] h-full bg-primary p-20 relative">
           <h1 className="text-5xl font-semibold">Hello,</h1>
           <p className="mt-4 text-[18px] font-semibold">
             I'm Igwe Chimezie Francis, or just Francis. I focus on creating
@@ -12,11 +13,10 @@ const About = () => {
           <hr className="w-24 border-t-4 my-4 border-text-orange" />
           <p>
             I'm a fourth year student at Nnamdi Azikiwe University. I have a
-            background in crafting and refining web solutions, ranging from
-            sleek, simple landing pages to complex progressive web applications.
-            My goal is to build software that not only operates seamlessly but
-            also delivers a user experience that’s both intuitive and visually
-            stunning.
+            background in crafting web solutions, ranging from sleek, simple
+            landing pages to complex progressive web applications. My goal is to
+            build software that not only operates seamlessly but also delivers a
+            user experience that’s both intuitive and visually stunning.
           </p>
           <br />
           <p>
@@ -39,9 +39,13 @@ const About = () => {
           </p>
           <span className="font-semibold text-6xl">&lt;/&gt;</span>
         </div>
-        <div className="lg:w-[40%] h-screen bg-secondary p-8 grid place-items-center">
-          <div className="w-[300px] h-[300px] bg-primary rounded-full overflow-hidden border-8 border-primary grayscale">
-            <img src={myImage} alt="" srcSet="" />
+        <div className="lg:w-[40%] bg-secondary max-lg:bg-primary  p-8 grid place-items-center">
+          <div className="w-[300px] h-full max-h-[600px] bg-primary rounded-full overflow-hidden border-8 border-primary grayscale flex items-center justify-center">
+            <img
+              src={myImage}
+              alt="Profile"
+              className="w-full h-full object-cover"
+            />
           </div>
         </div>
       </div>

@@ -14,15 +14,15 @@ const Skills = () => {
   const [skill, setSkill] = useState("");
   const [visible, setVisible] = useState(false);
   return (
-    <div className="h-screen w-screen flex">
+    <div className=" w-screen lg:flex">
       <div
         className="lg:w-[60%] bg-secondary p-20 bg-[url('../../src/assets/images/web-dev-simple.jpg')] bg-fixed bg-center bg-no-repeat bg-cover
  w-full h-full"
       >
         <h1 className="text-4xl mb-1 text-primary">What I Do...</h1>
         <hr className="w-24 border-t-4 my-4 border-text-orange"></hr>
-        <div className="grid grid-cols-2 grid-rows-2 gap-8 h-fit">
-          <div className=" bg-secondary hover:bg-card-bg hover:scale-105 transition-all rounded-lg p-4 h-[220px] pb-6">
+        <div className="grid max-sm:grid-cols-1 grid-cols-2 grid-rows-2 gap-8 h-fit">
+          <div className=" bg-secondary hover:bg-card-bg hover:scale-105 transition-all rounded-lg p-4 min-h-[220px] pb-6">
             <h2 className="text-[18px] font-bold text-primary mb-4">
               WEB DEVELOPMENT
             </h2>
@@ -32,7 +32,7 @@ const Skills = () => {
               semantic, modular, and DRY code base.
             </p>
           </div>
-          <div className=" bg-secondary hover:bg-card-bg hover:scale-105 transition-all rounded-lg p-4 h-[220px] pb-6">
+          <div className=" bg-secondary hover:bg-card-bg hover:scale-105 transition-all rounded-lg p-4 min-h-[220px] pb-6">
             <h2 className="text-[18px] font-bold text-primary mb-4">
               RESPONSIVE UI DESIGN
             </h2>
@@ -42,7 +42,7 @@ const Skills = () => {
               appealing interfaces for websites and apps.
             </p>
           </div>
-          <div className=" bg-secondary hover:bg-card-bg hover:scale-105 transition-all rounded-lg p-4 h-[220px] pb-6">
+          <div className=" bg-secondary hover:bg-card-bg hover:scale-105 transition-all rounded-lg p-4 min-h-[220px]  pb-6">
             <h2 className="text-[18px] font-bold text-primary mb-4">
               CROSS-BROWSER COMPARTIBILTY
             </h2>
@@ -52,7 +52,7 @@ const Skills = () => {
               experience.
             </p>
           </div>
-          <div className=" bg-secondary hover:bg-card-bg hover:scale-105 transition-all rounded-lg p-4 h-[220px] pb-6">
+          <div className=" bg-secondary hover:bg-card-bg hover:scale-105 transition-all rounded-lg p-4 min-h-[220px]  pb-6">
             <h2 className="text-[18px] font-bold text-primary mb-4">
               DEBUG AND TROBLESHOOT ISSUES
             </h2>
@@ -63,12 +63,12 @@ const Skills = () => {
           </div>
         </div>
       </div>
-      <div className="lg:w-[40%] h-screen bg-primary p-20 relative">
+      <div className="lg:w-[40%] bg-primary p-20 relative">
         <h1 className="text-4xl mb-1">Skills</h1>
         <hr className="w-24 border-t-4 my-4 border-text-orange"></hr>
-        <div className="pl-4 mb-2">
+        <div className="lg:pl-4 mb-2">
           <h2 className="text-2xl mb-1">Development</h2>
-          <div className="grid lg:grid-cols-4 gap-2 my-2 w-fit pl-4">
+          <div className="grid max-sm:grid-cols-2 grid-cols-4 gap-2 my-2 w-fit">
             <span
               className="w-20 h-20 bg-primary rounded-full grid place-items-center border-2 border-secondary hover:bg-secondary hover:text-primary"
               onMouseOver={() => {
@@ -232,9 +232,9 @@ const Skills = () => {
             </span>
           </div>
         </div>
-        <div className="pl-4 mb-2">
+        <div className="mb-2">
           <h2 className="text-2xl mb-1">Tools</h2>
-          <div className="pl-4 flex flex-wrap gap-1">
+          <div className="lg:pl-4 flex flex-wrap gap-1">
             <span className="bg-secondary text-primary py-2 px-3 rounded-lg">
               ✔ Git + Github
             </span>
@@ -262,7 +262,7 @@ const Skills = () => {
           </div>
         </div>
         {visible && (
-          <span className="absolute top-8 right-8 py-2 px-4 border border-secondary hidden lg:block">
+          <span className="absolute top-8 right-8 py-2 px-4 border border-secondary ">
             {skill}
           </span>
         )}

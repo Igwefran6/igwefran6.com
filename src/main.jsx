@@ -7,6 +7,8 @@ import AnimatedCursorSetup from "./components/layouts/AnimatedCursorSetup";
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <App />
-    <AnimatedCursorSetup />
+    <div className="hidden lg:block">
+      <AnimatedCursorSetup />
+    </div>
   </React.StrictMode>
 );

@@ -11,8 +11,11 @@ const ProjectCard = ({
     window.location.href = url;
   };
   return (
-    <div className="flex flex-row h-auto pb-4 opacity-85 hover:opacity-90">
-      <div className="w-[35%] bg-slate-800 p-8 text-primary">
+    <div className="flex-row h-auto pb-4 opacity-85 hover:opacity-90">
+      <div className="flex items-center ">
+        <img src={imgURL} alt="Project" className="w-full h-auto" />
+      </div>
+      <div className=" bg-slate-800 p-8 text-primary">
         <h2 className="text-2xl mb-4">{title}</h2>
         <p className="pr-4">{text}</p>
         <div className="flex gap-2 flex-wrap py-2">
@@ -39,9 +42,6 @@ const ProjectCard = ({
             Visit
           </button>
         </div>
-      </div>
-      <div className="w-[65%] flex items-center ">
-        <img src={imgURL} alt="Project" className="w-full h-auto" />
       </div>
     </div>
   );

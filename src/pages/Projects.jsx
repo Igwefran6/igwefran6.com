@@ -1,10 +1,10 @@
 import ProjectCard from "../components/layouts/ProjectCard";
 const Project = () => {
   return (
-    <div className="min-h-screen w-screen bg-secondary px-20 pt-12">
+    <div className=" w-screen bg-secondary lg:px-20 px-14 pt-10">
       <h1 className="text-4xl text-primary ">Some of My Work</h1>
       <hr className="w-24 border-t-4 my-4 border-text-orange"></hr>
-      <div className="">
+      <div>
         <ProjectCard
           title="Dictle"
           imgURL="../../src/assets/images/Dictle-img.png"
