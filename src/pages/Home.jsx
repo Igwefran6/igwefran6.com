@@ -5,8 +5,10 @@ import SocialIcon from "../components/SocialIcon";
 import ScrolldownMssg from "../components/ScrolldownMssg";
 import { mdiGithub, mdiFacebook, mdiTwitter } from "@mdi/js";
 import Bubble from "../components/layouts/Bubbles";
+import { useScrollContext } from "../hooks/useScrollContext";
 
 const Home = () => {
+  const { dispatch } = useScrollContext();
   return (
     <>
       <div className="w-screen h-screen overflow-x-hidden relative bg-transparent">
@@ -32,7 +34,7 @@ const Home = () => {
           {" "}
           <IntroContainer />
           <div className="m-auto w-fit mt-4 ">
-            <Button text="My Projects" />
+            <Button dispatch={dispatch} type="project" text="My Projects" />
           </div>
         </div>
         <div className="absolute right-8 bottom-[120px] translate-x-1/2 max-lg:hidden">

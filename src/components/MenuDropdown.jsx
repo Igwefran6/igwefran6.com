@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
+import { useScrollContext } from "../hooks/useScrollContext";
 const MenuDropdown = ({ visible, handleClick }) => {
+  const { dispatch } = useScrollContext();
   return (
     <>
       {visible && (
@@ -7,21 +9,30 @@ const MenuDropdown = ({ visible, handleClick }) => {
           <ul>
             <li
               className="active:underline underline-offset-2 active:opacity-65 hover:after:content-['↗']"
-              onClick={handleClick}
+              onClick={() => {
+                dispatch({ type: "about" });
+                handleClick();
+              }}
             >
-              <Link to="/">About</Link>
+              About
             </li>
             <li
               className="active:underline underline-offset-2 active:opacity-65 hover:after:content-['↗']"
-              onClick={handleClick}
+              onClick={() => {
+                dispatch({ type: "contact" });
+                handleClick();
+              }}
             >
-              <Link to="/">Contact</Link>
+              Contact
             </li>
             <li
               className="active:underline underline-offset-2 active:opacity-65 hover:after:content-['↗']"
-              onClick={handleClick}
+              onClick={() => {
+                dispatch({ type: "project" });
+                handleClick();
+              }}
             >
-              <Link to="/">Projects</Link>
+              Projects
             </li>
             <li
               className="active:underline underline-offset-2 active:opacity-65 hover:after:content-['↗']"

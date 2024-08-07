@@ -1,5 +1,5 @@
 import myImage from "/images/myImage.webp";
-import PlaceholderImage from "/images/myImage-sm.webp";
+import placeholderImage from "/images/myImage-sm.webp";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const About = () => {
@@ -42,11 +42,13 @@ const About = () => {
           <span className="font-semibold text-6xl">&lt;/&gt;</span>
         </div>
         <div className="lg:w-[40%] bg-secondary max-lg:bg-primary  p-8 grid place-items-center">
-          <div className="w-[300px] h-full max-h-[600px] bg-primary rounded-full overflow-hidden border-8 border-primary grayscale flex items-center justify-center">
+          <div className="w-[300px] h-full max-h-[500px] bg-primary rounded-full overflow-hidden border-8 border-primary grayscale flex items-center justify-center">
             <LazyLoadImage
               src={myImage}
-              PlaceholderSrc={PlaceholderImage}
+              placeholderSrc={placeholderImage}
               alt="My Image"
+              height={"100%"}
+              width={"auto"}
               className="w-full h-full object-cover"
             />
           </div>

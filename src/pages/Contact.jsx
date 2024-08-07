@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import validator from "validator";
+import { useScrollContext } from "../hooks/useScrollContext";
 
 const Contact = () => {
+  const { dispatch } = useScrollContext();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -146,7 +148,10 @@ const Contact = () => {
           )}
         </form>
       </div>
-      <button className="absolute bottom-8 right-20 text-2xl text-primary">
+      <button
+        onClick={() => dispatch({ type: "top" })}
+        className="absolute bottom-8 right-20 text-2xl text-primary"
+      >
         Goto Top
       </button>
     </div>
