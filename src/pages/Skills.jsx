@@ -54,7 +54,7 @@ const Skills = () => {
           </div>
           <div className=" bg-secondary hover:bg-card-bg hover:scale-105 transition-all rounded-lg p-4 min-h-[220px]  pb-6">
             <h2 className="text-[18px] font-bold text-primary mb-4">
-              DEBUG AND TROBLESHOOT ISSUES
+              DEBUG AND TROUBLESHOOT ISSUES
             </h2>
             <p className="text-primary opacity-75">
               Identifying and fixing bugs or issues that arise on the website,

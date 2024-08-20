@@ -7,7 +7,7 @@ export default {
         primary: "#CBD5E1",
         "primary-transparent": "#CBD5E1DD",
         secondary: "#334155",
-        background: "#EEEEEE",
+        background: "#FAFAFA",
         "text-orange": "#F87537",
         "button-boundary-color": "#94A3B8",
         "card-bg": "#1B1B1B",
