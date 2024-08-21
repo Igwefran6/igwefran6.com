@@ -18,7 +18,19 @@ const Contact = () => {
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
+
+    // Revalidate the input field as the user types
+    const errors = { ...errMssg };
+    if (name === "name" && !validator.isEmpty(value)) {
+      delete errors.name;
+    } else if (name === "email" && validator.isEmail(value)) {
+      delete errors.email;
+    } else if (name === "message" && !validator.isEmpty(value)) {
+      delete errors.message;
+    }
+    setErrMssg(errors);
   };
+
   const inputsValid = () => {
     const { name, email, message } = formData;
     const errors = {};
