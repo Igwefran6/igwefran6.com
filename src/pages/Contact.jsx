@@ -27,10 +27,10 @@ const Contact = () => {
       errors.name = "I'd love to know your name!";
     }
     if (!validator.isEmail(email)) {
-      errors.email = "Invalid email address!";
+      errors.email = "I'd need a valid email to reply you!";
     }
     if (validator.isEmpty(message)) {
-      errors.message = "Please write me some message!";
+      errors.message = "Please leave me some message!";
     }
 
     setErrMssg(errors);
