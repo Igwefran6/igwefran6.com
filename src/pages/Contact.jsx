@@ -58,7 +58,7 @@ const Contact = () => {
 
     setSubmitting(true);
     emailjs
-      .sendForm("service_etijegc", "template_7ilr8bk", form.current, {
+      .sendForm("service_etijegc", "template_zrohmna", form.current, {
         publicKey: "Jevwt9uRllCInf_FC",
       })
       .then(
