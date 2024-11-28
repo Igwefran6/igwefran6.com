@@ -5,12 +5,12 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 const About = () => {
   return (
     <>
-      <div className="w-screen overflow-hidden flex max-lg:block">
-        <div className="lg:w-[60%] h-full bg-primary p-20 relative">
+      <div className="w-screen overflow-hidden flex max-lg:block bg-gradient-to-bl from-[#CBD5E1] to-[#94A3B8]">
+        <div className="lg:w-[60%] h-full bg-transparent p-20 relative">
           <h1 className="text-5xl font-semibold">Hello,</h1>
           <p className="mt-4 text-[18px] font-semibold">
-            I'm Igwe Chimezie Francis, or just Francis. I focus on creating
-            beautiful, user-friendly web experiences through clean code.
+            I'm Igwe Francis, or just Francis. I create beautiful, user-friendly
+            web experiences through clean code.
           </p>
           <hr className="w-24 border-t-4 my-4 border-text-orange" />
           <p>
@@ -41,7 +41,7 @@ const About = () => {
           </p>
           <span className="font-semibold text-6xl">&lt;/&gt;</span>
         </div>
-        <div className="lg:w-[40%] bg-secondary max-lg:bg-primary  p-8 grid place-items-center">
+        <div className="lg:w-[40%] bg-secondary max-lg:bg-transparent  p-8 grid place-items-center">
           <div className="w-[300px] h-full max-h-[500px] bg-primary rounded-full overflow-hidden border-8 border-primary grayscale flex items-center justify-center">
             <LazyLoadImage
               src={myImage}

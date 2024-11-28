@@ -1,4 +1,4 @@
-import brush from "../../assets/vectors/brush.svg";
+import brush from "../assets/vectors/brush.svg";
 
 const IntroContainer = () => {
   return (
@@ -12,7 +12,7 @@ const IntroContainer = () => {
         ></img>
       </div>
       <div className=" text-[18px] lg:text-2xl max-w-[480px] m-auto">
-        Full-Stack MERN Developer and Designer
+        Full-Stack Web and App Developer
       </div>
     </div>
   );

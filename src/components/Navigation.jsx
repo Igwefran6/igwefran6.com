@@ -1,6 +1,6 @@
-import { useScrollContext } from "../../hooks/useScrollContext";
-import Button from "../Button";
-import DropdownButton from "../DropdownButton";
+import { useScrollContext } from "../hooks/useScrollContext";
+import Button from "./Button";
+import DropdownButton from "./DropdownButton";
 const Navigation = () => {
   const { dispatch } = useScrollContext();
   return (

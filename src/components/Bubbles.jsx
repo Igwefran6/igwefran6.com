@@ -1,4 +1,4 @@
-import "../../bubbleStyle.css";
+import "../bubbleStyle.css";
 
 const Bubble = () => {
   return (

@@ -1,14 +1,13 @@
 import React from "react";
-import Container from "../WebsiteContainer";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import WebsiteContainer from "../WebsiteContainer";
+import Layout from "../Layout";
 import NotFoundPage from "../pages/NotFoundPage";
 
 // Define the router configuration
 const router = createBrowserRouter([
   {
     path: "/", // Root path
-    element: <WebsiteContainer />, // Component to render for this path
+    element: <Layout />, // Component to render for this path
     errorElement: <NotFoundPage />, // Component to render if there's an error
   },
 ]);

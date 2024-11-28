@@ -29,7 +29,9 @@ body {
   bottom: 0;
   width: 100%;
   height: 100%;
-  background: transparent;
+  background: url("/bg.png");
+  object-fit: cover;
+  background-repeat: no-repeat;
   overflow: hidden;
   z-index: -1;
 }
@@ -43,7 +45,7 @@ body {
   position: absolute;
 }
 .bubble-1 {
-  opacity: 0.32;
+  opacity: 0.5;
   left: 83vw;
   top: 22vh;
   animation: move-1 30.02s infinite;
@@ -53,7 +55,7 @@ body {
   transform: translate(0, 0) scale(0.37);
 }
 .bubble-2 {
-  opacity: 0.89;
+  opacity: 1;
   left: 55vw;
   top: 10vh;
   animation: move-2 30.04s infinite;
@@ -63,7 +65,7 @@ body {
   transform: translate(0, 0) scale(0.46);
 }
 .bubble-3 {
-  opacity: 0.41;
+  opacity: 0.3;
   left: 93vw;
   top: 3vh;
   animation: move-3 30.06s infinite;
@@ -73,7 +75,7 @@ body {
   transform: translate(0, 0) scale(0.27);
 }
 .bubble-4 {
-  opacity: 0.5;
+  opacity: 0.7;
   left: 36vw;
   top: 11vh;
   animation: move-4 30.08s infinite;
@@ -93,7 +95,7 @@ body {
   transform: translate(0, 0) scale(0.27);
 }
 .bubble-6 {
-  opacity: 0.81;
+  opacity: 0.75;
   left: 77vw;
   top: 17vh;
   animation: move-6 30.12s infinite;
@@ -351,12 +353,6 @@ body {
   background-color: rgba(0, 0, 0, 0.6);
   width: 100%;
   z-index: 111;
-}
-.credits a {
-  color: #fff;
-  font-size: 11px;
-  text-decoration: none;
-  letter-spacing: 0.05em;
 }
 
 @keyframes move-1 {

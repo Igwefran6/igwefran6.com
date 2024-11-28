@@ -63,7 +63,7 @@ const Skills = () => {
           </div>
         </div>
       </div>
-      <div className="lg:w-[40%] bg-primary p-20 relative">
+      <div className="lg:w-[40%] bg-gradient-to-bl from-[#CBD5E1] to-[#94A3B8] p-20 relative">
         <h1 className="text-4xl mb-1">Skills</h1>
         <hr className="w-24 border-t-4 my-4 border-text-orange"></hr>
         <div className="lg:pl-4 mb-2">

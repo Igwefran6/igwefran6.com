@@ -3,12 +3,12 @@ import About from "./pages/About";
 import Skills from "./pages/Skills";
 import Project from "./pages/Projects";
 import Contact from "./pages/Contact";
-import Footer from "./components/layouts/Footer";
+import Footer from "./components/Footer";
 import { useEffect, useRef } from "react";
 Footer;
 import { useScrollContext } from "./hooks/useScrollContext";
 
-const WebContainer = () => {
+const Layout = () => {
   const top = useRef();
   const about = useRef();
   const contact = useRef();
@@ -37,7 +37,7 @@ const WebContainer = () => {
     }
   }, [state]);
   return (
-    <div className="overflow-x-hidden">
+    <div className="overflow-x-hidden selection:bg-text-orange">
       <div className="" ref={top}>
         <Home />
       </div>
@@ -58,4 +58,4 @@ const WebContainer = () => {
   );
 };
 
-export default WebContainer;
+export default Layout;
