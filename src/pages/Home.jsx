@@ -13,7 +13,7 @@ const Home = () => {
     <>
       <div className="w-screen h-svh overflow-x-hidden relative bg-transparent">
         <Header />
-        <div className="fixed lg:absolute bottom-8 right-1/2 translate-x-1/2 lg:left-20 lg:bottom-1/2 lg:translate-y-1/2 lg:translate-x-0 flex lg:flex-col gap-3 z-50">
+        <div className="absolute bottom-8 right-1/2 translate-x-1/2 lg:left-20 lg:bottom-1/2 lg:translate-y-1/2 lg:translate-x-0 flex lg:flex-col gap-3 z-50">
           <SocialIcon
             icon={mdiGithub}
             toolTip="github"
